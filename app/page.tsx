@@ -3,7 +3,6 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "GitHub", href: "https://github.com/warfin123" },
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
@@ -13,6 +12,14 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
+          <Link
+            key="https://github.com/warfin123"
+            href="https://github.com/warfin123"
+            target="_blank"
+            className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 font-display"
+          >
+            GitHub
+          </Link>
           {navigation.map((item) => (
             <Link
               key={item.href}
