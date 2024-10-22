@@ -3,7 +3,6 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "GitHub", href: "https://github.com/warfin123", target="_blank" },
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
@@ -14,6 +13,14 @@ export default function Home() {
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
+            <Link
+              key="https://github.com/warfin123"
+              href="https://github.com/warfin123"
+             target="_blank"
+              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 font-display"
+            >
+             GitHub
+            </Link>
             <Link
               key={item.href}
               href={item.href}
