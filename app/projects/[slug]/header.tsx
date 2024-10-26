@@ -4,12 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import Particles from "../../components/particles";
-import styles from "./Header.module.css";
-import dynamic from "next/dynamic";
 
-const WidgetBot = dynamic(() => import("@widgetbot/react-embed"), {
-  ssr: false,
-});
 type Props = {
   project: {
     url?: string;
@@ -112,15 +107,6 @@ export const Header: React.FC<Props> = ({ project }) => {
               ))}
             </div>
           </div>
-        </div>
-      </div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
-        <div className={styles.widgetContainer}>
-          <WidgetBot
-            server="1259437346944979027"
-            channel="1268177540824957000"
-          ></WidgetBot>
-          <script src="https://unpkg.com/@widgetbot/html-embed" async></script>
         </div>
       </div>
     </header>
