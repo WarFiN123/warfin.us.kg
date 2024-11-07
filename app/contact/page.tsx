@@ -21,7 +21,7 @@ const socials = [
     icon: <SiDiscord title="Discord" size={20} />,
     href: "https://discord.gg/t6CKrYvQuE",
     label: "Discord",
-    handle: "ogwarfin",
+    handle: "warfin",
   },
   {
     icon: <SiGmail size={20} />,
