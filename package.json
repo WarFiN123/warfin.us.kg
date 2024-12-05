@@ -17,7 +17,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "contentlayer": "^0.3.4",
     "framer-motion": "^11.11.9",
-    "lucide-react": "^0.441.0",
+    "lucide-react": "^0.462.0",
     "markdown-wasm": "^1.2.0",
     "next": "^14.2.15",
     "next-contentlayer": "^0.3.4",
